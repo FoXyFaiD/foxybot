@@ -10,7 +10,7 @@ bot.on('ready', () => {
     console.log("Bot Ready !");
 });
 
-bot.login('NDQyNTk5MzY1MzcwOTcwMTEy.DdBKUw.no5uq0hsYuMLeHI2AbNRZOhth5g');
+bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === "Salut" || message.content === "Bonjour" || message.content === "Bonsoir" || message.content === "Bichour" || message.content === "Yo"){
